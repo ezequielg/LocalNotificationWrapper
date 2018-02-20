@@ -1,0 +1,16 @@
+PODS:
+  - LocalNotificationWrapper (0.1.0)
+
+DEPENDENCIES:
+  - LocalNotificationWrapper (from `../`)
+
+EXTERNAL SOURCES:
+  LocalNotificationWrapper:
+    :path: ../
+
+SPEC CHECKSUMS:
+  LocalNotificationWrapper: 280688eaf74112785709ff8fc6fb220be1047cc6
+
+PODFILE CHECKSUM: d3d8335ddff6f586a3eb4cbd529e675671102adb
+
+COCOAPODS: 1.4.0
