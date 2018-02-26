@@ -16,6 +16,7 @@
 		4C572A99203CB9AF00D2DEBA /* Attachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C572A93203CB9AF00D2DEBA /* Attachment.swift */; };
 		4C572A9A203CB9AF00D2DEBA /* LocalNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C572A94203CB9AF00D2DEBA /* LocalNotification.swift */; };
 		4C572A9B203CB9AF00D2DEBA /* LocalNotificationRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C572A95203CB9AF00D2DEBA /* LocalNotificationRequester.swift */; };
+		4C6AEDD62040BFF7002C5466 /* NotificationOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6AEDD52040BFF7002C5466 /* NotificationOptions.swift */; };
 		88CED7D9ED566BA0979C116D4544B7FE /* Pods-LocalNotificationWrapper_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 395A5F29F0C0291120FC85A2FE722671 /* Pods-LocalNotificationWrapper_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8FA7928C6016389CE793F0BCCF69742B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		A2E4A340D65AC8802985C42D34BB0AED /* Pods-LocalNotificationWrapper_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 84C0D13087715F04E1EA8744F8576DA7 /* Pods-LocalNotificationWrapper_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -54,6 +55,7 @@
 		4C572A93203CB9AF00D2DEBA /* Attachment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Attachment.swift; sourceTree = "<group>"; };
 		4C572A94203CB9AF00D2DEBA /* LocalNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalNotification.swift; sourceTree = "<group>"; };
 		4C572A95203CB9AF00D2DEBA /* LocalNotificationRequester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocalNotificationRequester.swift; path = LocalNotificationWrapper/Classes/LocalNotificationRequester.swift; sourceTree = "<group>"; };
+		4C6AEDD52040BFF7002C5466 /* NotificationOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationOptions.swift; sourceTree = "<group>"; };
 		4F8359F79CDB1B9FBE8E3A9D3AAF858E /* Pods-LocalNotificationWrapper_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocalNotificationWrapper_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6DAAFC3CBE70114C67948F59D1A6A83C /* LocalNotificationWrapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LocalNotificationWrapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -177,12 +179,13 @@
 		8FCECB2DB4B2D88A6C7E1305BC63E44D /* LocalNotificationWrapper */ = {
 			isa = PBXGroup;
 			children = (
+				4C572A90203CB9AF00D2DEBA /* WWLocalNotification.h */,
+				4C3FE1BB203CB90A00F3149B /* LocalNotificationBuilder.swift */,
 				4C572A8F203CB9AF00D2DEBA /* LocalNotificationManager.swift */,
 				4C572A95203CB9AF00D2DEBA /* LocalNotificationRequester.swift */,
 				4C572A91203CB9AF00D2DEBA /* LocalNotificationScheduler.swift */,
+				4C6AEDD52040BFF7002C5466 /* NotificationOptions.swift */,
 				4C572A92203CB9AF00D2DEBA /* Models */,
-				4C572A90203CB9AF00D2DEBA /* WWLocalNotification.h */,
-				4C3FE1BB203CB90A00F3149B /* LocalNotificationBuilder.swift */,
 				FC2B49F88D12101E475839EE5E138680 /* Pod */,
 				A424733D410E7F4FA5F3390C2CDDB8AE /* Support Files */,
 			);
@@ -382,6 +385,7 @@
 				CFDBC34CEAB17392E75B3C97DAEE7F14 /* LocalNotificationWrapper-dummy.m in Sources */,
 				4C572A9B203CB9AF00D2DEBA /* LocalNotificationRequester.swift in Sources */,
 				4C572A96203CB9AF00D2DEBA /* LocalNotificationManager.swift in Sources */,
+				4C6AEDD62040BFF7002C5466 /* NotificationOptions.swift in Sources */,
 				4C572A98203CB9AF00D2DEBA /* LocalNotificationScheduler.swift in Sources */,
 				4C572A9A203CB9AF00D2DEBA /* LocalNotification.swift in Sources */,
 				4C572A99203CB9AF00D2DEBA /* Attachment.swift in Sources */,

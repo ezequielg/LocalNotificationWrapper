@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import LocalNotificationWrapper
 
 class NotificationOptionTests: XCTestCase {
     
@@ -20,10 +21,21 @@ class NotificationOptionTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testSingle() {
+        let option = NotificationOption.alert
+        XCTAssertTrue(option == .alert)
     }
+
+    func testInit() {
+        var options = [NotificationOption]()
+        let indexes = [1, 2, 4, 8]
+        for index in indexes {
+            let option = NotificationOption(rawValue: index)!
+            options.append(option)
+        }
+        XCTAssertTrue(options.count == 4)
+    }
+
     
     func testPerformanceExample() {
         // This is an example of a performance test case.

@@ -3,17 +3,17 @@ import UserNotifications
 
 internal class LocalNotificationRequester {
 
-    func requestPermission() {
+    func requestPermission(options : [NotificationOption] = []) {
         if #available(iOS 10, *) {
-            self.requestPermissionForiOS10()
+            self.requestPermissionForiOS10With(options)
             return
         }
-        self.requestPermissionForiOS9()
+        self.requestPermissionForiOS9With(options)
     }
 
     @available(iOS 10.0, *)
-    private func requestPermissionForiOS10() {
-        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound], completionHandler: { (granted, error) in
+    private func requestPermissionForiOS10With(_ options :[NotificationOption]) {
+        UNUserNotificationCenter.current().requestAuthorization(options: options.toUNAuthorizationOptions(), completionHandler: { (granted, error) in
             if error != nil {
                 print("[UserNotificationCenterHelper] There was an error requesting the authorization to the user")
             } else {
@@ -22,9 +22,14 @@ internal class LocalNotificationRequester {
         })
     }
 
-    private func requestPermissionForiOS9() {
+    private func requestPermissionForiOS9With(_ options : [NotificationOption]) {
         let types : UIUserNotificationType = [UIUserNotificationType.alert, UIUserNotificationType.sound, UIUserNotificationType.badge]
-        let settings = UIUserNotificationSettings(types: types, categories: nil)
+        let settings = UIUserNotificationSettings(types: options.toUIUserNotificationTypes(), categories: nil)
         UIApplication.shared.registerUserNotificationSettings(settings)
     }
+}
+
+internal class NotificationOptionParser {
+
+    
 }

@@ -14,8 +14,8 @@ public class LocalNotificationManager {
         self.scheduler = scheduler
     }
 
-    public func requestPermission() {
-        self.requester.requestPermission()
+    public func requestPermission(options : [NotificationOption]) {
+        self.requester.requestPermission(options: options)
     }
 
     internal func send(messageBody : String) {
@@ -30,4 +30,6 @@ public class LocalNotificationManager {
     internal func send(content : UNNotificationContent) {
         self.scheduler.scheduleForiOS10(content: content)
     }
+
+    public func heelo() {}
 }

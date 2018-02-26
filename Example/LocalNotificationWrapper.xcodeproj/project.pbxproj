@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0C986CDC911891FEEB570DC1 /* Pods_LocalNotificationWrapper_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91D1C03E1F892A3CB2F8AAB3 /* Pods_LocalNotificationWrapper_Tests.framework */; };
+		4C7D8B4720446EE5007111DB /* NotificationOptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7D8B4620446EE5007111DB /* NotificationOptionTests.swift */; };
+		4C7D8B49204470B3007111DB /* NotificationOptionExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7D8B48204470B3007111DB /* NotificationOptionExtensionTests.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -32,6 +34,8 @@
 		408375B0923F2EFC910F3B07 /* Pods-LocalNotificationWrapper_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalNotificationWrapper_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LocalNotificationWrapper_Example/Pods-LocalNotificationWrapper_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		49B40E5B5977C2808A521E16 /* Pods-LocalNotificationWrapper_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalNotificationWrapper_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LocalNotificationWrapper_Tests/Pods-LocalNotificationWrapper_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4AB5412879A61A33D11E1A33 /* Pods_LocalNotificationWrapper_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LocalNotificationWrapper_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C7D8B4620446EE5007111DB /* NotificationOptionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationOptionTests.swift; sourceTree = "<group>"; };
+		4C7D8B48204470B3007111DB /* NotificationOptionExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationOptionExtensionTests.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* LocalNotificationWrapper_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalNotificationWrapper_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +121,8 @@
 			children = (
 				607FACEB1AFB9204008FA782 /* Tests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
+				4C7D8B4620446EE5007111DB /* NotificationOptionTests.swift */,
+				4C7D8B48204470B3007111DB /* NotificationOptionExtensionTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -215,10 +221,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = Y857GK27XT;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = Y857GK27XT;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -380,6 +388,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				4C7D8B4720446EE5007111DB /* NotificationOptionTests.swift in Sources */,
+				4C7D8B49204470B3007111DB /* NotificationOptionExtensionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,6 +527,7 @@
 			baseConfigurationReference = 408375B0923F2EFC910F3B07 /* Pods-LocalNotificationWrapper_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Y857GK27XT;
 				INFOPLIST_FILE = LocalNotificationWrapper/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -533,6 +544,7 @@
 			baseConfigurationReference = 778600E354260D0FA3262026 /* Pods-LocalNotificationWrapper_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Y857GK27XT;
 				INFOPLIST_FILE = LocalNotificationWrapper/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -548,6 +560,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 49B40E5B5977C2808A521E16 /* Pods-LocalNotificationWrapper_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = Y857GK27XT;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -562,6 +575,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LocalNotificationWrapper_Example.app/LocalNotificationWrapper_Example";
 			};
 			name = Debug;
 		};
@@ -569,6 +583,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6F2E93AC7F4D0EAAB6B967DB /* Pods-LocalNotificationWrapper_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = Y857GK27XT;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -579,6 +594,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LocalNotificationWrapper_Example.app/LocalNotificationWrapper_Example";
 			};
 			name = Release;
 		};
