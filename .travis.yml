@@ -6,3 +6,5 @@ osx_image: xcode9.1
 
 xcode_workspace: Example/LocalNotificationWrapper.xcworkspace # path to your xcodeproj folder
 xcode_scheme: LocalNotificationWrapper_Tests
+
+script: xcodebuild clean && xcodebuild build -workspace Example/LocalNotificationWrapper.xcworkspace-scheme LocalNotificationWrapper_Tests
