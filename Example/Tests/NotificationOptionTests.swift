@@ -26,15 +26,15 @@ class NotificationOptionTests: XCTestCase {
         XCTAssertTrue(option == .alert)
     }
 
-    func testInit() {
-        var options = [NotificationOption]()
-        let indexes = [1, 2, 4, 8]
-        for index in indexes {
-            let option = NotificationOption(rawValue: index)!
-            options.append(option)
-        }
-        XCTAssertTrue(options.count == 4)
-    }
+//    func testInit() {
+//        var options = [NotificationOption]()
+//        let indexes = [1, 2, 4, 8]
+//        for index in indexes {
+//            let option = NotificationOption(rawValue: index)!
+//            options.append(option)
+//        }
+//        XCTAssertTrue(options.count == 4)
+//    }
 
     
     func testPerformanceExample() {
