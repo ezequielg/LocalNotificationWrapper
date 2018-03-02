@@ -39,14 +39,18 @@ class NotificationOptionExtensionTests: XCTestCase {
     }
 
     func testEmptytoAuthorizationOptions() {
-//        var options = []
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+        let options : [NotificationOption] = []
+        if #available(iOS 10.0, *) {
+            let authOptions = options.toUNAuthorizationOptions()
+            XCTAssert(authOptions.isEmpty)
         }
     }
-    
+    func testEmptyUserNotificationsTypes() {
+        let options : [NotificationOption] = []
+        if #available(iOS 10.0, *) {
+            let authOptions = options.toUIUserNotificationTypes()
+            XCTAssert(authOptions.isEmpty)
+        }
+    }
+
 }

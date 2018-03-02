@@ -28,8 +28,3 @@ internal class LocalNotificationRequester {
         UIApplication.shared.registerUserNotificationSettings(settings)
     }
 }
-
-internal class NotificationOptionParser {
-
-    
-}

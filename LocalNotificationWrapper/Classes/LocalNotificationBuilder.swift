@@ -23,7 +23,7 @@ internal class LocalNotificationBuilder {
         notificationContent.sound = notification.getSoundForiOS10()
         notificationContent.userInfo = notification.userInfo
         notificationContent.badge = notification.badge
-        notificationContent.attachments = notification.attachments.toUNNotificationAttachemnt()
+        notificationContent.attachments = notification.attachments.toUNNotificationAttachment()
         notificationContent.launchImageName = notification.launchImageName
         //TO-DO Category Identifier, Thread Identifier properties.
         return notificationContent

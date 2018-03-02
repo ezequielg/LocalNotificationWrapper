@@ -38,7 +38,7 @@ public class Attachment {
 extension Array where Element : Attachment {
 
     @available(iOS 10.0, *)
-    func toUNNotificationAttachemnt() -> [UNNotificationAttachment] {
+    func toUNNotificationAttachment() -> [UNNotificationAttachment] {
         var notificationAttachment : [UNNotificationAttachment] = []
         for attachment in self {
             if let correctAttachment = attachment.notificationAttachment() {

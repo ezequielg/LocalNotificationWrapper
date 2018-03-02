@@ -8,8 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		0C986CDC911891FEEB570DC1 /* Pods_LocalNotificationWrapper_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91D1C03E1F892A3CB2F8AAB3 /* Pods_LocalNotificationWrapper_Tests.framework */; };
+		4C58578C2045B6E000EEEA4F /* AttachmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C58578B2045B6E000EEEA4F /* AttachmentTests.swift */; };
 		4C7D8B4720446EE5007111DB /* NotificationOptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7D8B4620446EE5007111DB /* NotificationOptionTests.swift */; };
 		4C7D8B49204470B3007111DB /* NotificationOptionExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7D8B48204470B3007111DB /* NotificationOptionExtensionTests.swift */; };
+		4C8A9BFA204716CB008054AA /* landscape.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4C8A9BF9204716CB008054AA /* landscape.jpeg */; };
+		4C8A9BFC20471CC8008054AA /* animal.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4C8A9BFB20471CC8008054AA /* animal.jpeg */; };
+		4C8E71592045B0E6002F7E94 /* LocalNotificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8E71582045B0E6002F7E94 /* LocalNotificationTests.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -34,8 +38,12 @@
 		408375B0923F2EFC910F3B07 /* Pods-LocalNotificationWrapper_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalNotificationWrapper_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LocalNotificationWrapper_Example/Pods-LocalNotificationWrapper_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		49B40E5B5977C2808A521E16 /* Pods-LocalNotificationWrapper_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalNotificationWrapper_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LocalNotificationWrapper_Tests/Pods-LocalNotificationWrapper_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4AB5412879A61A33D11E1A33 /* Pods_LocalNotificationWrapper_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LocalNotificationWrapper_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C58578B2045B6E000EEEA4F /* AttachmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentTests.swift; sourceTree = "<group>"; };
 		4C7D8B4620446EE5007111DB /* NotificationOptionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationOptionTests.swift; sourceTree = "<group>"; };
 		4C7D8B48204470B3007111DB /* NotificationOptionExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationOptionExtensionTests.swift; sourceTree = "<group>"; };
+		4C8A9BF9204716CB008054AA /* landscape.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = landscape.jpeg; path = ../../../../../Documents/landscape.jpeg; sourceTree = "<group>"; };
+		4C8A9BFB20471CC8008054AA /* animal.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = animal.jpeg; path = ../../../../../Documents/animal.jpeg; sourceTree = "<group>"; };
+		4C8E71582045B0E6002F7E94 /* LocalNotificationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationTests.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* LocalNotificationWrapper_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalNotificationWrapper_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +81,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C8A9BF82047166E008054AA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4C8A9BFB20471CC8008054AA /* animal.jpeg */,
+				4C8A9BF9204716CB008054AA /* landscape.jpeg */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +120,7 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				4C8A9BF82047166E008054AA /* Resources */,
 			);
 			name = "Example for LocalNotificationWrapper";
 			path = LocalNotificationWrapper;
@@ -123,6 +141,8 @@
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 				4C7D8B4620446EE5007111DB /* NotificationOptionTests.swift */,
 				4C7D8B48204470B3007111DB /* NotificationOptionExtensionTests.swift */,
+				4C8E71582045B0E6002F7E94 /* LocalNotificationTests.swift */,
+				4C58578B2045B6E000EEEA4F /* AttachmentTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -257,6 +277,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				4C8A9BFC20471CC8008054AA /* animal.jpeg in Resources */,
+				4C8A9BFA204716CB008054AA /* landscape.jpeg in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
@@ -387,9 +409,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C8E71592045B0E6002F7E94 /* LocalNotificationTests.swift in Sources */,
 				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
 				4C7D8B4720446EE5007111DB /* NotificationOptionTests.swift in Sources */,
 				4C7D8B49204470B3007111DB /* NotificationOptionExtensionTests.swift in Sources */,
+				4C58578C2045B6E000EEEA4F /* AttachmentTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
