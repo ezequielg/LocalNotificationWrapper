@@ -11,9 +11,9 @@
 		4C58578C2045B6E000EEEA4F /* AttachmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C58578B2045B6E000EEEA4F /* AttachmentTests.swift */; };
 		4C7D8B4720446EE5007111DB /* NotificationOptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7D8B4620446EE5007111DB /* NotificationOptionTests.swift */; };
 		4C7D8B49204470B3007111DB /* NotificationOptionExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7D8B48204470B3007111DB /* NotificationOptionExtensionTests.swift */; };
-		4C8A9BFA204716CB008054AA /* landscape.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4C8A9BF9204716CB008054AA /* landscape.jpeg */; };
-		4C8A9BFC20471CC8008054AA /* animal.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4C8A9BFB20471CC8008054AA /* animal.jpeg */; };
 		4C8E71592045B0E6002F7E94 /* LocalNotificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8E71582045B0E6002F7E94 /* LocalNotificationTests.swift */; };
+		4CDF4C5E204A0E7C00F9A332 /* animal.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4CDF4C5C204A0E7C00F9A332 /* animal.jpeg */; };
+		4CDF4C5F204A0E7C00F9A332 /* landscape.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4CDF4C5D204A0E7C00F9A332 /* landscape.jpeg */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -41,9 +41,9 @@
 		4C58578B2045B6E000EEEA4F /* AttachmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentTests.swift; sourceTree = "<group>"; };
 		4C7D8B4620446EE5007111DB /* NotificationOptionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationOptionTests.swift; sourceTree = "<group>"; };
 		4C7D8B48204470B3007111DB /* NotificationOptionExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationOptionExtensionTests.swift; sourceTree = "<group>"; };
-		4C8A9BF9204716CB008054AA /* landscape.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = landscape.jpeg; path = ../../../../../Documents/landscape.jpeg; sourceTree = "<group>"; };
-		4C8A9BFB20471CC8008054AA /* animal.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = animal.jpeg; path = ../../../../../Documents/animal.jpeg; sourceTree = "<group>"; };
 		4C8E71582045B0E6002F7E94 /* LocalNotificationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationTests.swift; sourceTree = "<group>"; };
+		4CDF4C5C204A0E7C00F9A332 /* animal.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = animal.jpeg; sourceTree = "<group>"; };
+		4CDF4C5D204A0E7C00F9A332 /* landscape.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = landscape.jpeg; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* LocalNotificationWrapper_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalNotificationWrapper_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -84,8 +84,8 @@
 		4C8A9BF82047166E008054AA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				4C8A9BFB20471CC8008054AA /* animal.jpeg */,
-				4C8A9BF9204716CB008054AA /* landscape.jpeg */,
+				4CDF4C5C204A0E7C00F9A332 /* animal.jpeg */,
+				4CDF4C5D204A0E7C00F9A332 /* landscape.jpeg */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -277,8 +277,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
-				4C8A9BFC20471CC8008054AA /* animal.jpeg in Resources */,
-				4C8A9BFA204716CB008054AA /* landscape.jpeg in Resources */,
+				4CDF4C5F204A0E7C00F9A332 /* landscape.jpeg in Resources */,
+				4CDF4C5E204A0E7C00F9A332 /* animal.jpeg in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
